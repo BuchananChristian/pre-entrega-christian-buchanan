@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    background-color: #6996D1;
+    color: #FFFFFF;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+footer {
+    background-color: #6996D1;
+    color: #FFFFFF;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+header h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    letter-spacing: 3px;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 15px 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-family: sans-serif;
+    font-weight: bold;    
+    font-size: 20px;
+}
+
+main {
+    padding: 40px 20px;
+    background-color: #6996D1;
+}
+
+section {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+main section h2 {
+    margin-bottom: 25px;
+    color: #333;
+    border-bottom: 2px solid #6996D1;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: none;
+    border-color: #6996D1;
+    background-color: #f4f8ff;
+    box-shadow: 0 0 8px rgba(105, 150, 209, 0.4);
+}
+
+.form-submit {
+    background-color: #6996D1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+    background-color: #5a85c1;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tarjeta-producto {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 200px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.titulo-producto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.descripcion-producto {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.precio-oferta {
+    font-weight: bold;
+    color: #e74c3c;
+    background-color: #fdf2f2;
+    border: 1px dashed #e74c3c;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.btn-agregar {
+    background-color: #6996D1;
+    color: #ffffff;
+    border: none;
+    padding: 12px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reseñas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    background-color: transparent;
+    border: none;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.card {
+    padding: 25px;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stars-container {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 15px;
+}
+
+.card i {
+    color: #f1c40f;
+    font-size: 1.1em;
+}
+
+.card h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+.mapa-container {
+    text-align: center;
+}
+
+.mapa-container h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.mapa-container iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-container p {
+    font-weight: bold;
+    color: #555;
+    font-size: 1em;
+}
+
+.info-adicional {
+    text-align: center;
+    padding: 25px;
+}
+
+.info-adicional p {
+    margin: 15px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.info-adicional i {
+    color: #6996D1;
+    font-size: 1.3em;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.info-adicional a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.info-adicional a:hover {
+    color: #6996D1;
+}
+
+@media (max-width: 768px) {
+    .reseñas {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    textarea {
+        margin-bottom: 20px;
+    }
+}

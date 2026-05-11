@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="author" content="Christian Buchanan">
+    <title>Acuario CORAL REEF</title>
+</head>
+<body>
+    <header id="inicio">
+        <video autoplay loop muted playsinline class="video-background">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="header-content">
+            <img src="imagenes/logo.png" alt="Logo de Coral Reef">
+            <h1>Acuario CORAL REEF</h1>
+            <h2>Peces marinos</h2>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="productos">
+            <h2>Productos destacados</h2>
+            <div class="productos">
+                <article class="tarjeta-producto">
+                    <img src="imagenes/producto-pez-payaso.webp" alt="Pez Payaso">
+                    <h3 class="titulo-producto">Pez Payaso</h3>
+                    <p class="descripcion-producto">Pez marino emblemático, ideal para acuarios de arrecife y perfecto para principiantes por su resistencia.</p>
+                    <p class="precio-oferta">¡Oferta! $24.999</p>
+                    <button class="btn-agregar">
+                        <i class="fa-solid fa-cart-plus"></i> Agregar al carrito
+                    </button>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <img src="imagenes/producto-alimento-tetra.webp" alt="Alimento Tetra Marine">
+                    <h3 class="titulo-producto">Alimento Tetra Marine</h3>
+                    <p class="descripcion-producto">Alimento premium y balanceado, diseñado específicamente para realzar los colores de tus peces marinos.</p>
+                    <p class="precio-oferta">¡Oferta! $13.999</p>
+                    <button class="btn-agregar">
+                        <i class="fa-solid fa-cart-plus"></i> Agregar al carrito
+                    </button>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <img src="imagenes/producto-pecera.webp" alt="Pecera 60x35x50">
+                    <h3 class="titulo-producto">Pecera 60x35x50</h3>
+                    <p class="descripcion-producto">Acuario de vidrio templado de 105 litros, con las dimensiones ideales para un ecosistema marino estable.</p>
+                    <p class="precio-oferta">¡Oferta! $79.999</p>
+                    <button class="btn-agregar">
+                        <i class="fa-solid fa-cart-plus"></i> Agregar al carrito
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <section class="reseñas">
+            <section class="card">
+                <div class="stars-container">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Martín G.</h3>
+                <p>"Excelente calidad en los productos. Compré el pez payaso y llegó en perfectas condiciones. ¡Muy recomendable!"</p>
+            </section>
+            
+            <section class="card">
+                <div class="stars-container">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Lucía P.</h3>
+                <p>"La pecera que adquirí tiene unos acabados increíbles. El asesoramiento fue clave para armar mi primer acuario."</p>
+            </section>
+
+            <section class="card">
+                <div class="stars-container">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <h3>Roberto F.</h3>
+                <p>"Uso el alimento Tetra Marine y noté un gran cambio en la coloración de mis peces en pocas semanas."</p>
+            </section>
+        </section>
+
+        <section id="ubicacion">
+            <div class="mapa-container">
+                <h3>¡Nos encontrarás AQUÍ!</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.0110255892832!2d-58.38230202849062!3d-34.60360389999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf3fc81b05%3A0x6d2a52045fcefe3b!2sAv.%20Corrientes%201080-1048%2C%20C1009%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1777916846646!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Av. Océano Atlántico 777 (CABA) – Buenos Aires</p>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/xzdkqywn" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre completo" required>
+                <br><br>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Escribí tu e-mail" required>
+                <br><br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta..." required></textarea>
+                <br><br>
+                <button type="submit" class="form-submit">Enviar</button>
+            </form>
+        </section>      
+
+        <section class="info-adicional">
+            <p><i class="fa-regular fa-clock"></i> Abierto: lunes a viernes: 09:00 hs a 19:00 hs. – sábados: 09:00 hs a 13:00 hs.</p>
+            <p><a href="https://wa.me/5491133332222" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp: 11-3333-2222</a></p>
+            <p><a href="https://www.instagram.com/coralreef_peces_marinos" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram: @coralreef_peces_marinos</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Acuario CORAL REEF.<br> Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
